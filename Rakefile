@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "lock-server"
-  gem.homepage = "http://github.com/NONE/lock-server"
+  gem.homepage = "http://github.com/blimp666/lock-server"
   gem.license = "MIT"
   gem.summary = %Q{Lock-server}
   gem.description = %Q{General purpose lock-server}
@@ -28,8 +28,8 @@ Jeweler::Tasks.new do |gem|
   gem.executables << 'lock_server'
 end
 
-# Это чтобы не херачил на rubygems ничего
-#Jeweler::RubygemsDotOrgTasks.new
+# Это чтобы на rubygems засылал
+Jeweler::RubygemsDotOrgTasks.new
 
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
