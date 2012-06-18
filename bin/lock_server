@@ -3,8 +3,8 @@ require 'rubygems'
 require 'daemons'
 require 'lock-server'
 
-file_name = ARGV[1] || 'lock-server.conf'
-config = eval(File.open("./#{file_name}").read)
+file_name = ARGV[1] || './lock-server.conf'
+config = eval(File.open("#{file_name}").read)
 
 Daemons.run_proc(config[:name], config[:daemons_options]) do
   LockServer.start_server(config[:server_socket])
