@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_lock-server.rb"
   ]
-  s.homepage = "http://github.com/NONE/lock-server"
+  s.homepage = "http://github.com/blimp666/lock-server"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.16"
